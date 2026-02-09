@@ -1,76 +1,201 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dr. Shahadat Hussain - Postdoctoral Fellow in Mechanical Engineering at Khalifa University, specializing in Additive Manufacturing and Materials Science">
-    <meta name="keywords" content="Materials Science, Additive Manufacturing, NiTi, Shape Memory Alloys, LPBF, Khalifa University">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shahadathussain.github.io/">
-    <meta property="og:title" content="Dr. Shahadat Hussain | Materials Science Researcher">
-    <meta property="og:description" content="Postdoctoral Fellow at Khalifa University specializing in Additive Manufacturing">
-    <meta property="og:image" content="https://shahadathussain.github.io/assets/images/profile.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://shahadathussain.github.io/">
-    <meta property="twitter:title" content="Dr. Shahadat Hussain | Materials Science Researcher">
-    <meta property="twitter:description" content="Postdoctoral Fellow at Khalifa University specializing in Additive Manufacturing">
-    <meta property="twitter:image" content="https://shahadathussain.github.io/assets/images/profile.jpg">
-    
     <title>Dr. Shahadat Hussain | Materials Science Researcher</title>
-    
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="/styles.css">
-    
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <style>
+        /* Complete CSS embedded for immediate fix */
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #1abc9c;
+            --light: #f8f9fa;
+            --dark: #1a252f;
+            --gray: #6c757d;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-toggle { display: none; }
+        
+        /* Hero Section */
+        .hero {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+        
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+        
+        /* Research Cards */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .research-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .research-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        /* Publications */
+        .publication-item {
+            background: var(--light);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .nav-toggle { display: block; }
+            .hero-title { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Skip to Content (Accessibility) -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="/" class="logo">
-                    <span class="logo-text">SH</span>
-                    <span class="logo-name">Dr. Shahadat Hussain</span>
-                </a>
-            </div>
-            
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
-                <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#expertise" class="nav-link">Expertise</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                <li class="nav-item">
-                    <button class="theme-toggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </li>
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">Dr. Shahadat Hussain</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="nav-toggle">☰</button>
         </div>
     </nav>
 
@@ -78,498 +203,134 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-grid">
-                <div class="hero-content">
+                <div>
                     <h1 class="hero-title">Dr. Shahadat Hussain</h1>
                     <h2 class="hero-subtitle">Postdoctoral Fellow | Materials Science Researcher</h2>
-                    <p class="hero-institution">
-                        <i class="fas fa-university"></i> Department of Mechanical Engineering<br>
-                        <i class="fas fa-map-marker-alt"></i> Khalifa University, Abu Dhabi, UAE
-                    </p>
+                    <p><i class="fas fa-university"></i> Khalifa University, Abu Dhabi, UAE</p>
+                    <p><i class="fas fa-envelope"></i> shahadat_ind@yahoo.com</p>
+                    <p><i class="fas fa-phone"></i> +971 50 628 0812</p>
                     
                     <div class="hero-stats">
                         <div class="stat">
-                            <span class="stat-number">312</span>
-                            <span class="stat-label">Citations</span>
-                        </div>
-                        <div class="stat">
                             <span class="stat-number">11+</span>
-                            <span class="stat-label">Publications</span>
+                            <span>Publications</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">6</span>
-                            <span class="stat-label">Years Exp</span>
+                            <span>Years Experience</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">8</span>
-                            <span class="stat-label">H-index</span>
+                            <span class="stat-number">312</span>
+                            <span>Citations</span>
                         </div>
                     </div>
                     
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i> Get in Touch
-                        </a>
-                        <a href="assets/pdfs/Shahadat_CV.pdf" class="btn btn-secondary" target="_blank">
-                            <i class="fas fa-download"></i> Download CV
-                        </a>
-                    </div>
-                    
-                    <div class="hero-social">
-                        <a href="https://sites.google.com/view/shahadathussain" class="social-icon" aria-label="Google Scholar">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/shahadathussain" class="social-icon" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:shahadat_ind@yahoo.com" class="social-icon" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="#" class="social-icon" aria-label="ResearchGate">
-                            <i class="ai ai-researchgate"></i>
-                        </a>
-                        <a href="#" class="social-icon" aria-label="ORCID">
-                            <i class="ai ai-orcid"></i>
-                        </a>
-                    </div>
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="assets/pdfs/Shahadat_CV.pdf" class="btn" target="_blank">Download CV</a>
                 </div>
-                
                 <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="assets/images/profile.jpg" alt="Dr. Shahadat Hussain" loading="lazy">
-                        <div class="image-badge">
-                            <span class="badge-text">PhD</span>
-                        </div>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80" alt="Dr. Shahadat Hussain">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Research Section -->
-    <section id="research" class="section research-section">
+    <section id="research" class="research">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Research Focus</h2>
-                <p class="section-subtitle">Advancing materials science through innovative manufacturing and characterization techniques</p>
-            </div>
-            
+            <h2 class="section-title">Research Focus</h2>
             <div class="research-grid">
                 <div class="research-card">
                     <div class="research-icon">
                         <i class="fas fa-print"></i>
                     </div>
-                    <h3 class="research-title">Additive Manufacturing</h3>
-                    <p class="research-description">Laser Powder Bed Fusion (LPBF) of NiTi shape memory alloys and triply periodic minimal surface (TPMS) structures</p>
-                    <ul class="research-list">
-                        <li>NiTi TPMS lattices fabrication</li>
-                        <li>Process optimization</li>
-                        <li>Defect analysis</li>
-                    </ul>
+                    <h3>Additive Manufacturing</h3>
+                    <p>Laser Powder Bed Fusion of NiTi shape memory alloys and TPMS structures</p>
                 </div>
-                
                 <div class="research-card">
                     <div class="research-icon">
                         <i class="fas fa-atom"></i>
                     </div>
-                    <h3 class="research-title">Shape Memory Alloys</h3>
-                    <p class="research-description">Development and characterization of smart materials for high-temperature applications</p>
-                    <ul class="research-list">
-                        <li>Cu-Al-Ni SMAs</li>
-                        <li>NiTi alloys</li>
-                        <li>Phase transformation</li>
-                    </ul>
+                    <h3>Shape Memory Alloys</h3>
+                    <p>Development and characterization of smart materials for high-temperature applications</p>
                 </div>
-                
                 <div class="research-card">
                     <div class="research-icon">
                         <i class="fas fa-microscope"></i>
                     </div>
-                    <h3 class="research-title">Advanced Characterization</h3>
-                    <p class="research-description">Comprehensive materials analysis using state-of-the-art techniques</p>
-                    <ul class="research-list">
-                        <li>SEM/EDS/EBSD</li>
-                        <li>XRD analysis</li>
-                        <li>AFM & DSC</li>
-                    </ul>
+                    <h3>Materials Characterization</h3>
+                    <p>SEM, XRD, EDS, EBSD, AFM, and fatigue testing analysis</p>
                 </div>
-                
                 <div class="research-card">
                     <div class="research-icon">
-                        <i class="fas fa-battery-full"></i>
+                        <i class="fas fa-industry"></i>
                     </div>
-                    <h3 class="research-title">Materials Processing</h3>
-                    <p class="research-description">Traditional and advanced processing techniques for material optimization</p>
-                    <ul class="research-list">
-                        <li>Vacuum induction melting</li>
-                        <li>Hot rolling</li>
-                        <li>Heat treatment</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Current Projects -->
-    <section class="section projects-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Current Projects</h2>
-                <p class="section-subtitle">Ongoing research initiatives and collaborations</p>
-            </div>
-            
-            <div class="projects-timeline">
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3 class="project-title">Additive Manufacturing of NiTi TPMS Structures</h3>
-                        <span class="project-year">2020 - Present</span>
-                    </div>
-                    <div class="project-meta">
-                        <span class="project-institution">Khalifa University</span>
-                        <span class="project-collaborators">Collaboration: University of Thessaly, Greece</span>
-                    </div>
-                    <p class="project-description">
-                        Investigating mechanical properties and phase transformation behavior of additively manufactured NiTi TPMS structures for biomedical and aerospace applications.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">LPBF</span>
-                        <span class="tag">NiTi</span>
-                        <span class="tag">TPMS</span>
-                        <span class="tag">Fatigue Testing</span>
-                    </div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3 class="project-title">Fatigue Analysis of Thin NiTi Wires</h3>
-                        <span class="project-year">2021 - Present</span>
-                    </div>
-                    <div class="project-meta">
-                        <span class="project-institution">ADAM Center, Khalifa University</span>
-                        <span class="project-collaborators">CSIR-AMPRI, India</span>
-                    </div>
-                    <p class="project-description">
-                        Systematic study of fatigue behavior in thin NiTi wires with varying diameters, compositions, and surface treatments using Instron 8872 fatigue testing machine.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Fatigue Analysis</span>
-                        <span class="tag">NiTi Wires</span>
-                        <span class="tag">Surface Treatment</span>
-                        <span class="tag">Mechanical Testing</span>
-                    </div>
+                    <h3>Materials Processing</h3>
+                    <p>Vacuum induction melting, hot rolling, and heat treatment techniques</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Publications Section -->
-    <section id="publications" class="section publications-section">
+    <section id="publications" style="background: #f8f9fa;">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Publications</h2>
-                <div class="section-actions">
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="journal">Journal Articles</button>
-                        <button class="filter-btn" data-filter="conference">Conference Papers</button>
-                        <button class="filter-btn" data-filter="book">Book Chapters</button>
-                    </div>
-                    <a href="https://scholar.google.com/citations?user=YOUR_ID" class="btn btn-outline" target="_blank">
-                        <i class="ai ai-google-scholar"></i> Google Scholar
-                    </a>
-                </div>
+            <h2 class="section-title">Recent Publications</h2>
+            <div class="publication-item">
+                <h3>Phase Transformation Behavior of NiTi TPMS Lattices (2024)</h3>
+                <p><strong>Hussain, S.</strong>, Alagha, A. N., Zaki, W.</p>
+                <p>Journal of Materials Engineering and Performance</p>
             </div>
-            
-            <div class="publications-list">
-                <!-- Journal Articles -->
-                <article class="publication-item" data-type="journal" data-year="2024">
-                    <div class="publication-content">
-                        <h3 class="publication-title">Phase Transformation Behavior of NiTi Triply Periodic Minimal Surface Lattices Fabricated by Laser Powder Bed Fusion</h3>
-                        <div class="publication-authors">
-                            <strong>Hussain, S.</strong>, Alagha, A. N., Zaki, W.
-                        </div>
-                        <div class="publication-meta">
-                            <span class="publication-journal">Journal of Materials Engineering and Performance</span>
-                            <span class="publication-year">2024</span>
-                        </div>
-                        <div class="publication-links">
-                            <a href="https://doi.org/10.1007/s11665-024-09162-7" class="publication-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> DOI
-                            </a>
-                            <a href="#" class="publication-link">
-                                <i class="fas fa-file-pdf"></i> PDF
-                            </a>
-                            <a href="#" class="publication-link">
-                                <i class="fas fa-quote-right"></i> Cite
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="publication-item" data-type="journal" data-year="2023">
-                    <div class="publication-content">
-                        <h3 class="publication-title">Microstructural and surface analysis of NiTi TPMS lattice sections fabricated by laser powder bed fusion</h3>
-                        <div class="publication-authors">
-                            <strong>Hussain, S.</strong>, Alagha, A. N., Haidemenopoulos, G. N., Zaki, W.
-                        </div>
-                        <div class="publication-meta">
-                            <span class="publication-journal">Journal of Manufacturing Processes</span>
-                            <span class="publication-volume">Vol. 102, pp. 375-386</span>
-                            <span class="publication-year">2023</span>
-                        </div>
-                        <div class="publication-links">
-                            <a href="https://doi.org/10.1016/j.jmapro.2023.07.055" class="publication-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> DOI
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Add more publications similarly -->
-                
-                <!-- Metrics Card -->
-                <div class="metrics-card">
-                    <h3 class="metrics-title">Research Impact</h3>
-                    <div class="metrics-grid">
-                        <div class="metric-item">
-                            <div class="metric-value">312</div>
-                            <div class="metric-label">Total Citations</div>
-                        </div>
-                        <div class="metric-item">
-                            <div class="metric-value">8</div>
-                            <div class="metric-label">H-index</div>
-                        </div>
-                        <div class="metric-item">
-                            <div class="metric-value">7</div>
-                            <div class="metric-label">i10-index</div>
-                        </div>
-                        <div class="metric-item">
-                            <div class="metric-value">11+</div>
-                            <div class="metric-label">Publications</div>
-                        </div>
-                    </div>
-                    <div class="metrics-update">
-                        <i class="fas fa-sync-alt"></i> Updated: May 2024
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section-footer">
-                <a href="#" class="btn btn-outline">
-                    <i class="fas fa-list"></i> View All Publications
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Expertise Section -->
-    <section id="expertise" class="section expertise-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technical Expertise</h2>
-                <p class="section-subtitle">Advanced equipment proficiency and analytical capabilities</p>
-            </div>
-            
-            <div class="expertise-grid">
-                <div class="expertise-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-microscope"></i> Characterization
-                    </h3>
-                    <ul class="expertise-list">
-                        <li>Scanning Electron Microscopy (SEM)</li>
-                        <li>X-ray Diffraction (XRD)</li>
-                        <li>Electron Backscatter Diffraction (EBSD)</li>
-                        <li>Atomic Force Microscopy (AFM)</li>
-                        <li>Energy Dispersive Spectroscopy (EDS)</li>
-                        <li>Differential Scanning Calorimetry (DSC)</li>
-                        <li>Optical Microscopy</li>
-                    </ul>
-                </div>
-                
-                <div class="expertise-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-industry"></i> Processing
-                    </h3>
-                    <ul class="expertise-list">
-                        <li>Laser Powder Bed Fusion (LPBF)</li>
-                        <li>Vacuum Induction Melting</li>
-                        <li>Hot & Cold Rolling</li>
-                        <li>Heat Treatment</li>
-                        <li>Metallography</li>
-                        <li>Chemical Etching</li>
-                    </ul>
-                </div>
-                
-                <div class="expertise-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-wrench"></i> Testing
-                    </h3>
-                    <ul class="expertise-list">
-                        <li>Instron 8872 Fatigue Testing</li>
-                        <li>Tensile/Compression Testing</li>
-                        <li>Hardness Testing</li>
-                        <li>Shape Memory Testing</li>
-                    </ul>
-                </div>
-                
-                <div class="expertise-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-laptop-code"></i> Software
-                    </h3>
-                    <ul class="expertise-list">
-                        <li>Python (NumPy, Pandas, Matplotlib)</li>
-                        <li>LaTeX & Overleaf</li>
-                        <li>ImageJ & Origin</li>
-                        <li>Xpert HighScore Plus</li>
-                        <li>CAD & 3D Modeling</li>
-                        <li>Data Analysis & Visualization</li>
-                    </ul>
-                </div>
+            <div class="publication-item">
+                <h3>Microstructural analysis of NiTi TPMS lattice sections (2023)</h3>
+                <p><strong>Hussain, S.</strong>, Alagha, A. N., Haidemenopoulos, G. N., Zaki, W.</p>
+                <p>Journal of Manufacturing Processes, 102:375-386</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
+    <section id="contact">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h2 class="contact-title">Get In Touch</h2>
-                    <p class="contact-description">
-                        Interested in collaboration, research opportunities, or academic discussion? Feel free to reach out.
-                    </p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h3>Email</h3>
-                                <a href="mailto:shahadat_ind@yahoo.com">shahadat_ind@yahoo.com</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h3>Phone</h3>
-                                <a href="tel:+971506280812">+971 50 628 0812</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h3>Location</h3>
-                                <p>Khalifa University<br>Main Campus, Abu Dhabi, UAE</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-link"></i>
-                            </div>
-                            <div>
-                                <h3>Profiles</h3>
-                                <div class="profile-links">
-                                    <a href="https://sites.google.com/view/shahadathussain" target="_blank">
-                                        <i class="fas fa-globe"></i> Google Site
-                                    </a>
-                                    <a href="https://linkedin.com/in/shahadathussain" target="_blank">
-                                        <i class="fab fa-linkedin"></i> LinkedIn
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Send a Message</h3>
-                    <form id="contactForm" netlify>
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
-                </div>
+            <h2 class="section-title">Contact Information</h2>
+            <div style="text-align: center;">
+                <p><i class="fas fa-envelope"></i> Email: shahadat_ind@yahoo.com</p>
+                <p><i class="fas fa-phone"></i> Phone: +971 50 628 0812</p>
+                <p><i class="fas fa-university"></i> Khalifa University, Abu Dhabi, UAE</p>
+                <p>
+                    <a href="https://sites.google.com/view/shahadathussain" target="_blank" style="color: var(--secondary);">Google Site</a> | 
+                    <a href="https://linkedin.com/in/shahadathussain" target="_blank" style="color: var(--secondary);">LinkedIn</a>
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">SH</div>
-                    <div>
-                        <h3>Dr. Shahadat Hussain</h3>
-                        <p>Materials Science Researcher</p>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <a href="#home">Home</a>
-                    <a href="#research">Research</a>
-                    <a href="#publications">Publications</a>
-                    <a href="#expertise">Expertise</a>
-                </div>
-                
-                <div class="footer-connect">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="mailto:shahadat_ind@yahoo.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/shahadathussain" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://sites.google.com/view/shahadathussain" aria-label="Google Scholar">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Dr. Shahadat Hussain. All rights reserved.</p>
-                <p>Hosted on GitHub Pages • Built with academic integrity</p>
-            </div>
-        </div>
+    <footer style="text-align: center; padding: 2rem; background: var(--primary); color: white;">
+        <p>&copy; 2024 Dr. Shahadat Hussain. Hosted on GitHub Pages.</p>
     </footer>
 
-    <!-- Back to Top -->
-    <button class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Scripts -->
-    <script src="/script.js"></script>
-    
-    <!-- Google Analytics (Optional) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-XXXXX-Y');
+        // Simple JavaScript for mobile menu
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').style.display = 
+                document.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex';
+        });
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
