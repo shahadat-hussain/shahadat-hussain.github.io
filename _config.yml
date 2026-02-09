@@ -1,0 +1,26 @@
+# Site settings
+title: "Dr. Shahadat Hussain | Materials Science Researcher"
+email: "shahadat_ind@yahoo.com"
+description: "Postdoctoral Fellow at Khalifa University specializing in Additive Manufacturing, Shape Memory Alloys, and Materials Characterization"
+baseurl: ""
+url: "https://shahadathussain.github.io"
+github_username: shahadathussain
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO
+google_analytics: UA-XXXXX-Y
+twitter_username: username
+github_username: username
+
+# Custom
+name: "Dr. Shahadat Hussain"
+position: "Postdoctoral Fellow"
+institution: "Khalifa University"
+location: "Abu Dhabi, UAE"
+phone: "+971 50 6280812"
