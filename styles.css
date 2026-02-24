@@ -2,17 +2,17 @@
 
 /* CSS Variables for Theming */
 :root {
-    /* Light Theme - Updated for modern academic look */
-    --primary-color: #1e3a8a;       /* Deep blue – more authoritative */
-    --secondary-color: #3b82f6;     /* Brighter but professional blue */
-    --accent-color: #10b981;        /* Emerald green – fresh, research-oriented */
-    --text-color: #111827;          /* Near-black for better readability */
-    --text-light: #4b5563;          /* Softer gray */
-    --bg-color: #f9fafb;            /* Off-white – less stark than pure white */
-    --bg-secondary: #f3f4f6;        /* Light gray sections */
-    --border-color: #d1d5db;
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.08);
+    
+    --primary-color: #60a5fa;       /* Light blue for headings */
+    --secondary-color: #34d399;     /* Teal-green accents */
+    --accent-color: #f87171;        /* Soft red if needed, or change to #fbbf24 */
+    --text-color: #f3f4f6;          /* Light gray text */
+    --text-light: #9ca3af;
+    --bg-color: #111827;            /* Dark slate (professional dark) */
+    --bg-secondary: #1f2937;
+    --border-color: #374151;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.6);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --radius: 8px;
     --radius-lg: 12px;
