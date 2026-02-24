@@ -183,3 +183,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.theme-toggle');
+    const html = document.documentElement;  // or document.body if preferred
+
+    // Check saved preference or system
+    if (localStorage.getItem('theme') === 'dark' ||
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.setAttribute('data-theme', 'dark');
+    } else {
+        html.setAttribute('data-theme', 'light'); // or remove attribute for default light
+    }
+
+    toggle.addEventListener('click', () => {
+        if (html.getAttribute('data-theme') === 'dark') {
+            html.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        } else {
+            html.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+});
