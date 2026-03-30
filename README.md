@@ -4,7 +4,7 @@ markdown
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://shahadat-hussain.github.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Personal academic website and portfolio for **Dr. Shahadat Hussain**, Postdoctoral Researcher at Khalifa University specializing in additive manufacturing, shape memory alloys, and mechanical metamaterials.
+Personal academic website and portfolio for **Dr. Shahadat Hussain**, Research Associate at New York University Abu Dhabi specializing in additive manufacturing, shape memory alloys, and mechanical metamaterials.
 
 🌐 **Live site:** [https://shahadat-hussain.github.io](https://shahadat-hussain.github.io)
 
