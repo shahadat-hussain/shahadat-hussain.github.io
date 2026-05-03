@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Science | Shahadat Hussain, PhD</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Shahadat Hussain, PhD</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="capabilities.html">Capabilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link active" href="data-science.html">Data Science</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow-1">
+
+    <!-- Header -->
+    <section class="py-5 bg-light border-bottom">
+      <div class="container">
+        <h1 class="h2 mb-3">Data Science & Computational Engineering</h1>
+        <p class="lead">
+          I apply machine learning, simulation‑driven modeling, and statistical analysis
+          to accelerate design, predict material behavior, and extract insights from
+          engineering datasets.
+        </p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-5">
+      <div class="container">
+
+        <!-- Section 1 -->
+        <div class="mb-5">
+          <h2 class="h4 mb-3">1. Machine Learning for Materials & Structures</h2>
+          <p>
+            I develop predictive models that link geometry, process parameters, and
+            material behavior. These models help reduce experimental cost and guide
+            design decisions in additive manufacturing and metamaterials.
+          </p>
+
+          <h3 class="h6 text-uppercase text-muted mt-3">Key Topics</h3>
+          <ul>
+            <li>Supervised learning for mechanical property prediction</li>
+            <li>Feature engineering for lattice and metamaterial geometries</li>
+            <li>Regression, classification, and surrogate modeling</li>
+            <li>Model interpretability and sensitivity analysis</li>
+          </ul>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="mb-5">
+          <h2 class="h4 mb-3">2. Simulation‑Driven Data & Hybrid Modeling</h2>
+          <p>
+            I integrate finite element simulations with data‑driven methods to create
+            hybrid models that combine physics‑based understanding with statistical
+            learning.
+          </p>
+
+          <h3 class="h6 text-uppercase text-muted mt-3">Key Topics</h3>
+          <ul>
+            <li>FEA‑based dataset generation</li>
+            <li>Physics‑informed ML models</li>
+            <li>Design space exploration and optimization</li>
+            <li>Uncertainty quantification</li>
+          </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="mb-5">
+          <h2 class="h4 mb-3">3. Statistical Analysis & Experimental Data Processing</h2>
+          <p>
+            I analyze mechanical testing data, extract trends, and build statistical
+            models to understand structure–property relationships and experimental
+            variability.
+          </p>
+
+          <h3 class="h6 text-uppercase text-muted mt-3">Key Topics</h3>
+          <ul>
+            <li>Data cleaning and preprocessing</li>
+            <li>Curve fitting and regression analysis</li>
+            <li>ANOVA and hypothesis testing</li>
+            <li>Signal processing for mechanical test data</li>
+          </ul>
+        </div>
+
+        <!-- Tools -->
+        <div class="mt-5">
+          <h2 class="h4 mb-3">Tools & Technologies</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Python · NumPy · Pandas · SciPy · scikit‑learn</li>
+            <li class="list-group-item">MATLAB · Statistics Toolbox</li>
+            <li class="list-group-item">TensorFlow / PyTorch (basic workflows)</li>
+            <li class="list-group-item">FEA tools: Abaqus, ANSYS, COMSOL</li>
+            <li class="list-group-item">Visualization: Matplotlib · Seaborn · Plotly</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light py-3 mt-5">
+    <div class="container text-center small">
+      <div>© <span id="year"></span> Shahadat Hussain, PhD. All rights reserved.</div>
+      <div class="mt-1">3D Printing · Metamaterials · Data‑Driven Engineering</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
