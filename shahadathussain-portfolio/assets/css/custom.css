@@ -1,0 +1,88 @@
+/* --------------------------------------------------
+   Global Typography
+-------------------------------------------------- */
+body {
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+/* --------------------------------------------------
+   Navbar
+-------------------------------------------------- */
+.navbar-brand {
+  letter-spacing: -0.5px;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: #fff !important;
+}
+
+/* --------------------------------------------------
+   Cards
+-------------------------------------------------- */
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+/* --------------------------------------------------
+   Buttons
+-------------------------------------------------- */
+.btn-primary {
+  background-color: #0056d2;
+  border-color: #0056d2;
+}
+
+.btn-primary:hover {
+  background-color: #0043a4;
+  border-color: #0043a4;
+}
+
+/* --------------------------------------------------
+   Section Spacing
+-------------------------------------------------- */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* --------------------------------------------------
+   Footer
+-------------------------------------------------- */
+footer {
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------------------
+   Blog Cards
+-------------------------------------------------- */
+.card .text-muted.small {
+  font-size: 0.8rem;
+}
+
+/* --------------------------------------------------
+   Contact Form
+-------------------------------------------------- */
+form .form-control {
+  border-radius: 8px;
+}
+
+form .btn {
+  padding: 0.55rem 1.2rem;
+}
