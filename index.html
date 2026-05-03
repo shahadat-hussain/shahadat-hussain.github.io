@@ -3,187 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home | Shahadat Hussain, PhD</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="assets/css/custom.css" />
-</head>
-<body class="d-flex flex-column min-vh-100">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">
-        Shahadat Hussain, PhD
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#mainNavbar" aria-controls="mainNavbar"
-              aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <title>Shahadat Hussain, PhD | 3D Printing & Metamaterials</title>
 
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="capabilities.html">Capabilities</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="data-science.html">Data Science</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white border-b border-gray-200 fixed w-full z-20 top-0 left-0 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold">Shahadat Hussain, PhD</a>
+
+      <div class="hidden md:flex space-x-6 font-medium">
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="capabilities.html" class="hover:text-blue-600">Capabilities</a>
+        <a href="projects.html" class="hover:text-blue-600">Projects</a>
+        <a href="research.html" class="hover:text-blue-600">Research</a>
+        <a href="publications.html" class="hover:text-blue-600">Publications</a>
+        <a href="data-science.html" class="hover:text-blue-600">Data Science</a>
+        <a href="blog.html" class="hover:text-blue-600">Blog</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact</a>
       </div>
     </div>
   </nav>
 
-  <main class="flex-grow-1">
-    <!-- Hero section -->
-    <section class="py-5 bg-light border-bottom">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h1 class="display-5 fw-bold mb-3">
-              3D Printing, Metamaterials & Data-Driven Engineering
-            </h1>
-            <p class="lead mb-4">
-              I am Shahadat Hussain, PhD — an engineer working at the intersection of
-              additive manufacturing, metamaterials, and computational design.
-            </p>
-            <div class="d-flex flex-wrap gap-2">
-              <a href="projects.html" class="btn btn-primary btn-lg">
-                View Projects
-              </a>
-              <a href="publications.html" class="btn btn-outline-secondary btn-lg">
-                View Publications
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-5 mt-4 mt-lg-0">
-            <!-- Optional profile / illustration -->
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Current Focus</h5>
-                <p class="card-text mb-2">
-                  · Lattice and metamaterial design for mechanical performance<br />
-                  · Design for additive manufacturing (DfAM)<br />
-                  · Data-driven and optimization-based workflows
-                </p>
-                <p class="small text-muted mb-0">
-                  Replace this text with your real current research / industrial focus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="pt-32 pb-20 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        Engineering the Future with <span class="text-yellow-300">3D Printing</span> &  
+        <span class="text-yellow-300">Metamaterials</span>
+      </h1>
 
-    <!-- Highlighted capabilities -->
-    <section class="py-5">
-      <div class="container">
-        <h2 class="h3 mb-4 text-center">Core Capabilities</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Additive Manufacturing</h5>
-                <p class="card-text">
-                  Design and optimization of components for metal and polymer 3D printing,
-                  including support strategies and process-aware design.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Metamaterials & Lattices</h5>
-                <p class="card-text">
-                  Architected materials for tailored stiffness, energy absorption, and
-                  multifunctional performance across scales.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Data & Simulation</h5>
-                <p class="card-text">
-                  Integration of simulation, optimization, and data-driven methods to
-                  accelerate design decisions and material discovery.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
+        Researcher & Engineer specializing in additive manufacturing, mechanical metamaterials, 
+        computational design, and data‑driven engineering.
+      </p>
 
-    <!-- Quick links -->
-    <section class="py-5 bg-light">
-      <div class="container">
-        <h2 class="h4 mb-4 text-center">Explore</h2>
-        <div class="row g-4">
-          <div class="col-md-3 col-6">
-            <a href="about.html" class="text-decoration-none">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-1">About</h5>
-                  <p class="small text-muted mb-0">Background & journey</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-6">
-            <a href="projects.html" class="text-decoration-none">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-1">Projects</h5>
-                  <p class="small text-muted mb-0">Selected work</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-6">
-            <a href="research.html" class="text-decoration-none">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-1">Research</h5>
-                  <p class="small text-muted mb-0">Themes & interests</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-6">
-            <a href="publications.html" class="text-decoration-none">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-1">Publications</h5>
-                  <p class="small text-muted mb-0">Papers & outputs</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-dark text-light py-3 mt-5">
-    <div class="container text-center small">
-      <div>© <span id="year"></span> Shahadat Hussain, PhD. All rights reserved.</div>
-      <div class="mt-1">
-        3D Printing · Metamaterials · Data-Driven Engineering
+      <div class="mt-8 flex justify-center space-x-4">
+        <a href="projects.html" class="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg shadow hover:bg-gray-100">
+          View Projects
+        </a>
+        <a href="publications.html" class="px-6 py-3 bg-transparent border border-white font-semibold rounded-lg hover:bg-white hover:text-blue-700">
+          Publications
+        </a>
       </div>
     </div>
+  </section>
+
+  <!-- CAPABILITIES PREVIEW -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Core Capabilities</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-3">Additive Manufacturing</h3>
+          <p class="text-gray-600">
+            Metal & polymer AM, DfAM, support optimization, and process‑aware design.
+          </p>
+        </div>
+
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-3">Mechanical Metamaterials</h3>
+          <p class="text-gray-600">
+            Architected materials with tunable stiffness, energy absorption, and multifunctionality.
+          </p>
+        </div>
+
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-3">Data‑Driven Engineering</h3>
+          <p class="text-gray-600">
+            ML models, simulation‑driven datasets, and predictive performance modeling.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS PREVIEW -->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+          <div class="h-40 bg-gray-200"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Metamaterial Lattice Design</h3>
+            <p class="text-gray-600 mb-4">Architected structures with tunable mechanical response.</p>
+            <a href="projects.html" class="text-blue-600 font-medium hover:underline">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+          <div class="h-40 bg-gray-200"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Design for Additive Manufacturing</h3>
+            <p class="text-gray-600 mb-4">Process‑aware redesign for metal AM.</p>
+            <a href="projects.html" class="text-blue-600 font-medium hover:underline">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
+          <div class="h-40 bg-gray-200"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Data‑Driven Material Prediction</h3>
+            <p class="text-gray-600 mb-4">ML models for predicting mechanical performance.</p>
+            <a href="projects.html" class="text-blue-600 font-medium hover:underline">Learn More →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 bg-gray-900 text-gray-300 text-center">
+    © <span id="year"></span> Shahadat Hussain, PhD — All Rights Reserved
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>
