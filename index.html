@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahadat Hussain, PhD — Materials Scientist &amp; Additive Manufacturing Researcher</title>
+<meta name="description" content="Shahadat Hussain, PhD — Research Associate, NYU Abu Dhabi. TPMS metamaterials, NiTi shape memory alloys, additive manufacturing, materials informatics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEF0F1;
+    --paper-dim:#E3E6E8;
+    --ink:#14171A;
+    --ink-soft:#3A3F45;
+    --steel:#6B7280;
+    --steel-line:#D2D6D9;
+    --graphite:#15181B;
+    --graphite-2:#1D2125;
+    --gold:#C9A227;
+    --violet:#7A4E8C;
+    --blue:#2F6FA0;
+    --pale-blue:#8FC7DE;
+    --oxide-grad: linear-gradient(90deg, var(--gold), var(--violet), var(--blue), var(--pale-blue));
+    --font-display:'Space Grotesk', sans-serif;
+    --font-mono:'IBM Plex Mono', monospace;
+    --font-body:'IBM Plex Sans', sans-serif;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  :focus-visible{outline:2px solid var(--blue); outline-offset:3px;}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+
+  /* ---------- NAV ---------- */
+  nav.site-nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    padding:18px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+    font-family:var(--font-mono);
+    font-size:0.78rem;
+    letter-spacing:0.04em;
+    transition:background .35s ease, box-shadow .35s ease, padding .35s ease;
+    color:#F2F1ED;
+  }
+  nav.site-nav .brand{font-weight:600; text-decoration:none; text-transform:uppercase;}
+  nav.site-nav ul{list-style:none; display:flex; gap:26px; margin:0; padding:0;}
+  nav.site-nav a.nav-link{
+    text-decoration:none; text-transform:uppercase; opacity:0.85;
+    padding-bottom:4px; border-bottom:1px solid transparent;
+    transition:opacity .2s, border-color .2s;
+  }
+  nav.site-nav a.nav-link:hover{opacity:1; border-image: var(--oxide-grad) 1; border-bottom:1px solid;}
+  nav.site-nav.solid{
+    background:rgba(21,24,27,0.92);
+    backdrop-filter:blur(6px);
+    box-shadow:0 1px 0 rgba(255,255,255,0.06);
+    padding:12px 28px;
+  }
+  .nav-toggle{display:none; background:none; border:none; color:#F2F1ED; font-family:var(--font-mono); font-size:0.9rem; cursor:pointer;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    background:var(--graphite);
+    color:#F2F1ED;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+  }
+  .hero svg.weave{position:absolute; inset:0; width:100%; height:100%;}
+  .weave-line{fill:none; stroke-width:1.1;}
+  @media (prefers-reduced-motion:no-preference){
+    .hero .weave-group{animation:drift 26s ease-in-out infinite alternate;}
+  }
+  @keyframes drift{
+    0%{transform:translate(0,0) scale(1);}
+    100%{transform:translate(-2%,1.5%) scale(1.02);}
+  }
+  .hero-inner{position:relative; z-index:2; padding:160px 28px 120px;}
+  .eyebrow{
+    font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--pale-blue); margin:0 0 18px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--oxide-grad);}
+  .hero h1{
+    font-family:var(--font-display); font-weight:700;
+    font-size:clamp(2.6rem, 6.4vw, 5.2rem);
+    line-height:1.03; margin:0 0 22px; letter-spacing:-0.01em;
+  }
+  .hero p.lede{
+    font-size:clamp(1.02rem, 1.6vw, 1.25rem);
+    max-width:640px; color:#C7CBCF; margin:0 0 40px; font-weight:400;
+  }
+  .hero-meta{
+    display:flex; flex-wrap:wrap; gap:10px 28px; margin-bottom:44px;
+    font-family:var(--font-mono); font-size:0.82rem; color:#9AA0A6;
+  }
+  .hero-meta span strong{color:#EDEDE9; font-weight:500;}
+  .btn-row{display:flex; flex-wrap:wrap; gap:16px;}
+  .btn{
+    font-family:var(--font-mono); font-size:0.85rem; text-transform:uppercase;
+    letter-spacing:0.05em; text-decoration:none; padding:13px 22px;
+    border-radius:2px; transition:transform .18s ease, box-shadow .18s ease;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn-primary{background:var(--oxide-grad); color:#0E1012; font-weight:600;}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 8px 22px rgba(47,111,160,0.35);}
+  .btn-ghost{border:1px solid #4A5057; color:#EDEDE9;}
+  .btn-ghost:hover{border-color:var(--pale-blue); color:var(--pale-blue);}
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{padding:108px 0;}
+  section.dim{background:var(--paper-dim);}
+  .section-head{margin-bottom:56px; max-width:680px;}
+  .section-eyebrow{
+    font-family:var(--font-mono); font-size:0.76rem; text-transform:uppercase;
+    letter-spacing:0.12em; color:var(--blue); margin:0 0 14px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .section-eyebrow::before{content:""; width:22px; height:2px; background:var(--oxide-grad);}
+  .section-head h2{
+    font-family:var(--font-display); font-size:clamp(1.7rem,3vw,2.4rem);
+    margin:0 0 14px; font-weight:600; letter-spacing:-0.01em;
+  }
+  .section-head p{color:var(--ink-soft); margin:0; font-size:1.02rem;}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:64px; align-items:start;}
+  .about-grid p{margin:0 0 18px; color:var(--ink-soft);}
+  .id-strip{
+    border:1px solid var(--steel-line); border-radius:4px; padding:26px;
+    background:#fff;
+  }
+  .id-strip h3{
+    font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase;
+    letter-spacing:0.1em; color:var(--steel); margin:0 0 18px;
+  }
+  .id-row{
+    display:flex; justify-content:space-between; gap:12px;
+    padding:11px 0; border-top:1px solid var(--steel-line);
+    font-size:0.86rem;
+  }
+  .id-row:first-of-type{border-top:none;}
+  .id-row span:first-child{color:var(--steel); font-family:var(--font-mono); font-size:0.74rem; text-transform:uppercase; letter-spacing:0.05em;}
+  .id-row a{font-family:var(--font-mono); text-decoration:none; border-bottom:1px dotted var(--steel-line);}
+  .id-row a:hover{border-color:var(--blue); color:var(--blue);}
+  .fellowships{margin-top:26px; padding-top:20px; border-top:1px solid var(--steel-line);}
+  .fellowships h3{font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--steel); margin:0 0 12px;}
+  .fellowships li{font-size:0.86rem; color:var(--ink-soft); margin-bottom:6px;}
+
+  /* ---------- RESEARCH CARDS ---------- */
+  .card-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .rcard{
+    background:#fff; border:1px solid var(--steel-line); border-radius:4px;
+    padding:30px 26px; position:relative; overflow:hidden;
+  }
+  .rcard::before{content:""; position:absolute; top:0; left:0; right:0; height:3px; background:var(--oxide-grad);}
+  .rcard .glyph{width:38px; height:38px; margin-bottom:20px;}
+  .rcard h3{font-family:var(--font-display); font-size:1.15rem; margin:0 0 10px; font-weight:600;}
+  .rcard p{margin:0; color:var(--ink-soft); font-size:0.92rem;}
+
+  /* ---------- PUBLICATIONS ---------- */
+  .pub-list{border-top:1px solid var(--steel-line);}
+  .pub{
+    display:grid; grid-template-columns:70px 1fr; gap:24px;
+    padding:26px 0; border-bottom:1px solid var(--steel-line);
+  }
+  .pub .year{font-family:var(--font-mono); color:var(--blue); font-weight:600; font-size:0.95rem;}
+  .pub h3{margin:0 0 8px; font-family:var(--font-display); font-size:1.08rem; font-weight:600; line-height:1.3;}
+  .pub .venue{font-style:italic; color:var(--steel); font-size:0.88rem; margin:0 0 8px;}
+  .pub .takeaway{font-size:0.92rem; color:var(--ink-soft); margin:0 0 10px;}
+  .pub .doi{font-family:var(--font-mono); font-size:0.78rem; text-decoration:none; color:var(--blue); border-bottom:1px dotted var(--blue);}
+  .pub.inpress .year{color:var(--violet);}
+  .tag-inpress{
+    font-family:var(--font-mono); font-size:0.68rem; text-transform:uppercase;
+    letter-spacing:0.08em; color:var(--violet); border:1px solid var(--violet);
+    padding:2px 8px; border-radius:20px; margin-left:10px;
+  }
+
+  /* ---------- CAPABILITIES ---------- */
+  .cap-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:0; border:1px solid var(--steel-line);}
+  .cap-block{padding:28px 30px; border-right:1px solid var(--steel-line); border-bottom:1px solid var(--steel-line);}
+  .cap-block:nth-child(2n){border-right:none;}
+  .cap-block h3{
+    font-family:var(--font-mono); font-size:0.78rem; text-transform:uppercase;
+    letter-spacing:0.08em; color:var(--blue); margin:0 0 16px;
+  }
+  .cap-block ul{margin:0; padding:0; list-style:none;}
+  .cap-block li{
+    font-size:0.9rem; padding:8px 0; border-top:1px solid var(--steel-line); color:var(--ink-soft);
+    display:flex; justify-content:space-between; gap:12px;
+  }
+  .cap-block li:first-child{border-top:none;}
+  .cap-block li .std{font-family:var(--font-mono); font-size:0.72rem; color:var(--steel); white-space:nowrap;}
+
+  /* ---------- PROJECTS ---------- */
+  .proj-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
+  .proj{
+    border:1px solid var(--steel-line); border-radius:4px; overflow:hidden; background:#fff;
+  }
+  .proj .swatch{height:120px; position:relative;}
+  .proj .swatch svg{width:100%; height:100%;}
+  .proj-body{padding:24px 26px;}
+  .proj h3{font-family:var(--font-display); font-size:1.05rem; margin:0 0 8px; font-weight:600;}
+  .proj p{margin:0; font-size:0.88rem; color:var(--ink-soft);}
+
+  /* ---------- CREDENTIALS ---------- */
+  .cred-list{display:flex; flex-wrap:wrap; gap:12px;}
+  .cred-chip{
+    font-family:var(--font-mono); font-size:0.78rem; padding:9px 16px;
+    border:1px solid var(--steel-line); border-radius:20px; background:#fff;
+    color:var(--ink-soft);
+  }
+  .cred-chip strong{color:var(--ink); font-weight:600;}
+
+  /* ---------- FOOTER / CONTACT ---------- */
+  footer{background:var(--graphite-2); color:#EDEDE9; padding:96px 0 40px;}
+  .footer-grid{display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:48px; margin-bottom:64px;}
+  footer h2{font-family:var(--font-display); font-size:clamp(1.8rem,3.4vw,2.6rem); margin:0 0 18px; font-weight:600;}
+  footer p.lede{color:#AEB3B8; max-width:420px; margin:0 0 26px;}
+  footer .email-link{
+    font-family:var(--font-mono); color:var(--pale-blue); text-decoration:none;
+    font-size:1.05rem; border-bottom:1px solid rgba(143,199,222,0.4);
+  }
+  footer h3{
+    font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase;
+    letter-spacing:0.1em; color:#7C838A; margin:0 0 18px;
+  }
+  footer ul{list-style:none; margin:0; padding:0;}
+  footer li{margin-bottom:11px;}
+  footer a.link{color:#DADDE0; text-decoration:none; font-size:0.92rem;}
+  footer a.link:hover{color:var(--pale-blue);}
+  .footer-bottom{
+    border-top:1px solid #2C3237; padding-top:28px;
+    display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px;
+    font-family:var(--font-mono); font-size:0.74rem; color:#6E747B;
+  }
+
+  @media (max-width:860px){
+    .about-grid, .card-grid, .cap-grid, .proj-grid, .footer-grid{grid-template-columns:1fr;}
+    .cap-block{border-right:none;}
+    nav.site-nav ul{
+      position:fixed; top:0; right:0; height:100vh; width:74%;
+      background:var(--graphite); flex-direction:column; justify-content:center;
+      align-items:flex-start; padding:40px; gap:24px;
+      transform:translateX(100%); transition:transform .3s ease;
+    }
+    nav.site-nav ul.open{transform:translateX(0);}
+    .nav-toggle{display:block;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav" id="siteNav">
+  <a href="#top" class="brand">S. Hussain</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">MENU</button>
+  <ul id="navList">
+    <li><a class="nav-link" href="#about">About</a></li>
+    <li><a class="nav-link" href="#research">Research</a></li>
+    <li><a class="nav-link" href="#publications">Publications</a></li>
+    <li><a class="nav-link" href="#capabilities">Capabilities</a></li>
+    <li><a class="nav-link" href="#projects">Projects</a></li>
+    <li><a class="nav-link" href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="weave" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="oxideGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C9A227"/>
+        <stop offset="35%" stop-color="#7A4E8C"/>
+        <stop offset="68%" stop-color="#2F6FA0"/>
+        <stop offset="100%" stop-color="#8FC7DE"/>
+      </linearGradient>
+    </defs>
+    <g class="weave-group" id="weaveGroup"></g>
+  </svg>
+  <div class="hero-inner wrap">
+    <p class="eyebrow">Research Associate · Division of Engineering · NYU Abu Dhabi</p>
+    <h1>Shahadat&nbsp;Hussain,&nbsp;PhD</h1>
+    <p class="lede">Materials scientist working at the boundary of what can be designed and what a laser can actually build — architected TPMS metamaterials, NiTi shape memory alloys, and the process-structure-property chain that connects them.</p>
+    <div class="hero-meta">
+      <span>Based in <strong>Abu Dhabi, UAE</strong></span>
+      <span><strong>509</strong> citations · h-index <strong>10</strong></span>
+      <span>ORCID <strong>0000-0002-4355-2169</strong></span>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#publications">View Research →</a>
+      <a class="btn btn-ghost" href="https://cdn.jsdelivr.net/gh/shahadat-hussain/miscellaneous@main/Shahadat_Hussain_Academic_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-eyebrow">About</p>
+      <h2>Ten years in the space between a CAD file and a finished alloy.</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>I'm a Research Associate in the Division of Engineering at New York University Abu Dhabi, where my work centers on architected metamaterials — mathematically defined Triply Periodic Minimal Surface (TPMS) lattices such as Gyroid, Schwarz Primitive, and Diamond topologies — built through additive manufacturing and pushed toward real structural and biomedical use.</p>
+        <p>A large part of that work lives inside Nitinol (NiTi) shape memory alloys: understanding how Laser Powder Bed Fusion parameters — laser power, scan speed, energy density — reshape the microstructure and phase transformation behavior of a lattice as it's printed, layer by layer. I hold a PhD in Materials Science and Technology from the Academy of Scientific and Innovative Research (AcSIR) at CSIR-AMPRI, Bhopal, and a BE in Mechanical Engineering from UIT-RGPV, also in Bhopal.</p>
+        <p>Before NYU Abu Dhabi, I spent four years as a Postdoctoral Fellow at Khalifa University, and earlier, as a Project Fellow at CSIR-AMPRI working on copper-based shape memory alloys via vacuum induction melting. Across that decade the throughline has stayed the same: computational design, additive manufacturing, and experimental characterization, increasingly tied together with Python and machine learning to predict how a material will actually behave before it's printed.</p>
+        <div class="fellowships">
+          <h3>Fellowships &amp; Awards</h3>
+          <ul>
+            <li>GATE-CSIR Senior Research Fellowship</li>
+            <li>GATE-CSIR Junior Research Fellowship</li>
+          </ul>
+        </div>
+      </div>
+      <div class="id-strip">
+        <h3>Researcher Identifiers</h3>
+        <div class="id-row"><span>ORCID</span><a href="https://orcid.org/0000-0002-4355-2169" target="_blank" rel="noopener">0000-0002-4355-2169</a></div>
+        <div class="id-row"><span>Scopus</span><a href="http://www.scopus.com/inward/authorDetails.url?authorID=56380929800" target="_blank" rel="noopener">56380929800</a></div>
+        <div class="id-row"><span>ResearcherID</span><a href="https://www.webofscience.com/wos/author/record/I-3091-2017" target="_blank" rel="noopener">I-3091-2017</a></div>
+        <div class="id-row"><span>ISNI</span><a href="https://isni.org/isni/0000000530207229" target="_blank" rel="noopener">0000 0005 3020 7229</a></div>
+        <div class="id-row"><span>Google Scholar</span><a href="https://scholar.google.com/citations?user=tQNSWaAAAAAJ&hl=en" target="_blank" rel="noopener">tQNSWaAAAAAJ</a></div>
+        <div class="id-row"><span>ResearchGate</span><a href="https://www.researchgate.net/profile/Shahadat-Hussain" target="_blank" rel="noopener">Shahadat-Hussain</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="dim">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-eyebrow">Research Focus</p>
+      <h2>Three problems, one process-structure-property chain.</h2>
+      <p>Everything below feeds the same question: how do design decisions and print parameters end up encoded in a material's final microstructure?</p>
+    </div>
+    <div class="card-grid">
+      <div class="rcard">
+        <svg class="glyph" viewBox="0 0 40 40"><path d="M2 12 C 10 4, 14 20, 20 12 S 30 4, 38 12" stroke="#2F6FA0" stroke-width="2" fill="none"/><path d="M2 26 C 10 18, 14 34, 20 26 S 30 18, 38 26" stroke="#7A4E8C" stroke-width="2" fill="none"/></svg>
+        <h3>TPMS Metamaterials</h3>
+        <p>Designing Gyroid, Schwarz Primitive, and Diamond lattices with tunable stiffness and energy absorption — architected structures whose mechanical response comes from geometry, not chemistry.</p>
+      </div>
+      <div class="rcard">
+        <svg class="glyph" viewBox="0 0 40 40"><rect x="6" y="6" width="12" height="12" fill="none" stroke="#C9A227" stroke-width="2"/><rect x="22" y="22" width="12" height="12" fill="none" stroke="#2F6FA0" stroke-width="2"/><path d="M18 12 L22 28" stroke="#7A4E8C" stroke-width="2"/></svg>
+        <h3>NiTi Shape Memory Alloys</h3>
+        <p>Investigating how LPBF process parameters govern phase transformation behavior — the martensite-to-austenite switch that lets a printed lattice "remember" its shape — and where that transformation goes wrong.</p>
+      </div>
+      <div class="rcard">
+        <svg class="glyph" viewBox="0 0 40 40"><path d="M4 34 L4 20 L14 20 L14 30 L24 30 L24 10 L34 10 L34 34 Z" fill="none" stroke="#8FC7DE" stroke-width="2"/></svg>
+        <h3>Materials Informatics</h3>
+        <p>Building Python and ML pipelines — SEM image segmentation, DSC transformation-temperature extraction, process-property correlation models — to turn characterization data into predictive tools.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-eyebrow">Publications</p>
+      <h2>Peer-reviewed record.</h2>
+      <p>509 citations · h-index 10 — full list on <a href="https://scholar.google.com/citations?user=tQNSWaAAAAAJ&hl=en" target="_blank" rel="noopener" style="color:var(--blue); border-bottom:1px dotted var(--blue); text-decoration:none;">Google Scholar</a>.</p>
+    </div>
+    <div class="pub-list">
+
+      <div class="pub inpress">
+        <div class="year">2026<span class="tag-inpress">Accepted</span></div>
+        <div>
+          <h3>Manuscript accepted — Thin-Walled Structures</h3>
+          <p class="venue">Thin-Walled Structures (Elsevier)</p>
+          <p class="takeaway">Forthcoming work continuing the TPMS lattice research program; details to follow on publication.</p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2024</div>
+        <div>
+          <h3>Phase Transformation Behavior of NiTi Triply Periodic Minimal Surface Lattices Fabricated by Laser Powder Bed Fusion</h3>
+          <p class="venue">Journal of Materials Engineering and Performance — with Ali N. Alagha, Wael Zaki</p>
+          <p class="takeaway">Examines how LPBF processing shapes the martensite/austenite transformation behavior of printed NiTi TPMS lattices.</p>
+          <a class="doi" href="https://doi.org/10.1007/s11665-024-09162-7" target="_blank" rel="noopener">doi.org/10.1007/s11665-024-09162-7</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2023</div>
+        <div>
+          <h3>Microstructural and surface analysis of NiTi TPMS lattice sections fabricated by laser powder bed fusion</h3>
+          <p class="venue">Journal of Manufacturing Processes, Vol. 102, pp. 375–386 — with Ali N. Alagha, Gregory N. Haidemenopoulos, Wael Zaki</p>
+          <p class="takeaway">Maps Ni evaporation and oxide/Ti-rich phase formation across Primitive and Gyroid topologies as a function of LPBF parameters.</p>
+          <a class="doi" href="https://doi.org/10.1016/j.jmapro.2023.07.055" target="_blank" rel="noopener">doi.org/10.1016/j.jmapro.2023.07.055</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2022</div>
+        <div>
+          <h3>Imperfections Formation in Thin Layers of NiTi Triply Periodic Minimal Surface Lattices Fabricated Using Laser Powder Bed Fusion</h3>
+          <p class="venue">Materials, 15(22), 7950 — with Ali N. Alagha, Wael Zaki</p>
+          <p class="takeaway">Characterizes balling and intergranular cracking in Schwarz-P NiTi layers across relative densities and scan strategies.</p>
+          <a class="doi" href="https://doi.org/10.3390/ma15227950" target="_blank" rel="noopener">doi.org/10.3390/ma15227950</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2022</div>
+        <div>
+          <h3>Inhomogeneous Microstructure due to Non-Uniform Solidification Rate in NiTi TPMS Structures Fabricated via LPBF</h3>
+          <p class="venue">ASME IMECE 2022, Columbus, Ohio</p>
+          <p class="takeaway">Links TPMS geometry to melt-pool dynamics and resulting solidification-driven microstructural variation.</p>
+          <a class="doi" href="https://asmedigitalcollection.asme.org/IMECE/proceedings-abstract/IMECE2022/86656/1156926" target="_blank" rel="noopener">ASME Digital Collection →</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2019</div>
+        <div>
+          <h3>Designed polycrystalline ultra-high ductile boron doped Cu-Al-Ni based shape memory alloy</h3>
+          <p class="venue">Applied Innovative Research, 1, pp. 29–37 — with Abhishek Pandey, Rupa Dasgupta</p>
+          <p class="takeaway">Doctoral-era work on boron-doped Cu-Al-Ni alloys, part of the AcSIR/CSIR-AMPRI PhD research program.</p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2017</div>
+        <div>
+          <h3>Study of effect of Fe, Cr and Ti on the martensite phase formation in Cu-12.5wt%Al-5wt%Mn SMA</h3>
+          <p class="venue">Advanced Materials Proceedings, 2(1), 22–25 — with Ashish Kumar Jain, M.A. Ansari, Abhishek Pandey, Rupa Dasgupta</p>
+          <a class="doi" href="https://doi.org/10.5185/amp.2017/106" target="_blank" rel="noopener">doi.org/10.5185/amp.2017/106</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="capabilities" class="dim">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-eyebrow">Capabilities</p>
+      <h2>Equipment and standards.</h2>
+      <p>Hands-on operation, not just specification — from powder bed to fracture surface.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap-block">
+        <h3>Metal AM · LPBF/SLM</h3>
+        <ul>
+          <li><span>EOS M400 — NiTi, stainless steel, Ti alloys</span><span class="std">ISO/ASTM 52904</span></li>
+        </ul>
+      </div>
+      <div class="cap-block">
+        <h3>Polymer &amp; Composite AM</h3>
+        <ul>
+          <li><span>Raise3D Pro3 Plus HS / Pro2 Plus / Forge1</span><span class="std"></span></li>
+          <li><span>Stratasys F370 (FDM), J850 (PolyJet)</span><span class="std">ISO/ASTM 52903-1</span></li>
+          <li><span>Ultimaker S1, Formlabs Form 3 (SLA), Bambu Lab X1 Carbon</span><span class="std"></span></li>
+        </ul>
+      </div>
+      <div class="cap-block">
+        <h3>Materials Characterization</h3>
+        <ul>
+          <li><span>JEOL 7610F / FEI Nova NanoSEM / Quanta 3D FIB-SEM</span><span class="std">SEM</span></li>
+          <li><span>Bruker D2 Phasor, Rigaku MiniFlex II</span><span class="std">XRD</span></li>
+          <li><span>Setaram, Mettler Toledo DSC 1</span><span class="std">DSC</span></li>
+          <li><span>Bruker Q4 Tasman</span><span class="std">OES</span></li>
+        </ul>
+      </div>
+      <div class="cap-block">
+        <h3>Mechanical Testing</h3>
+        <ul>
+          <li><span>Instron 5969, 50 kN (tensile/compression)</span><span class="std">ASTM E8, D638</span></li>
+          <li><span>Instron 8872, 25 kN (NiTi fatigue)</span><span class="std">ASTM E606, ISO 12106</span></li>
+          <li><span>MTS 100 kN (compression, 4-pt bending)</span><span class="std">ASTM E9, E290</span></li>
+          <li><span>SMA phase characterization</span><span class="std">ASTM F2004, F2082</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-eyebrow">Selected Projects</p>
+      <h2>From lattice design to physical part.</h2>
+    </div>
+    <div class="proj-grid">
+      <div class="proj">
+        <div class="swatch" style="background:#0F1416;">
+          <svg viewBox="0 0 300 120" preserveAspectRatio="none"><path d="M0 60 C40 10, 80 110, 120 60 S200 10, 240 60 S 300 20 300 60" stroke="url(#oxideGrad)" stroke-width="2" fill="none"/></svg>
+        </div>
+        <div class="proj-body">
+          <h3>Metamaterial Lattice Design</h3>
+          <p>Computational generation of Gyroid, Schwarz-P, and Diamond TPMS unit cells with tunable relative density for structural and damping applications.</p>
+        </div>
+      </div>
+      <div class="proj">
+        <div class="swatch" style="background:#12181B;">
+          <svg viewBox="0 0 300 120" preserveAspectRatio="none"><rect x="20" y="20" width="24" height="24" fill="none" stroke="#C9A227" stroke-width="2"/><rect x="60" y="50" width="24" height="24" fill="none" stroke="#7A4E8C" stroke-width="2"/><rect x="100" y="20" width="24" height="24" fill="none" stroke="#2F6FA0" stroke-width="2"/><rect x="140" y="50" width="24" height="24" fill="none" stroke="#8FC7DE" stroke-width="2"/></svg>
+        </div>
+        <div class="proj-body">
+          <h3>Design for Additive Manufacturing</h3>
+          <p>Process-aware redesign of parts for metal LPBF — support strategy, orientation, and geometry adjustments to reduce residual stress and cracking.</p>
+        </div>
+      </div>
+      <div class="proj">
+        <div class="swatch" style="background:#0F1416;">
+          <svg viewBox="0 0 300 120" preserveAspectRatio="none"><path d="M0 90 L40 70 L80 85 L120 40 L160 60 L200 20 L240 45 L300 10" stroke="url(#oxideGrad)" stroke-width="2" fill="none"/></svg>
+        </div>
+        <div class="proj-body">
+          <h3>Data-Driven Material Prediction</h3>
+          <p>ML models trained on mechanical-test and DSC data to predict phase-transformation temperatures and structural performance ahead of physical testing.</p>
+        </div>
+      </div>
+      <div class="proj">
+        <div class="swatch" style="background:#12181B;">
+          <svg viewBox="0 0 300 120" preserveAspectRatio="none"><circle cx="60" cy="60" r="34" fill="none" stroke="#2F6FA0" stroke-width="2"/><circle cx="150" cy="60" r="34" fill="none" stroke="#7A4E8C" stroke-width="2"/><circle cx="240" cy="60" r="34" fill="none" stroke="#8FC7DE" stroke-width="2"/></svg>
+        </div>
+        <div class="proj-body">
+          <h3>Interpenetrating Phase Composites</h3>
+          <p>3D-printed TPMS lattices impregnated with resin to create multiphase architected composites with enhanced damping and structural performance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dim" id="credentials">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-eyebrow">Credentials</p>
+      <h2>Micro-credentials &amp; certifications.</h2>
+    </div>
+    <div class="cred-list">
+      <span class="cred-chip"><strong>Arizona State University</strong> — Additive Manufacturing Specialization</span>
+      <span class="cred-chip"><strong>IBM</strong> — Data Science Professional Certificate</span>
+      <span class="cred-chip"><strong>Stanford / DeepLearning.AI</strong> — Machine Learning Specialization</span>
+      <span class="cred-chip"><strong>DeepLearning.AI</strong> — Deep Learning Specialization (in progress)</span>
+      <span class="cred-chip"><strong>MathWorks</strong> — Image Processing for Science &amp; Engineering</span>
+      <span class="cred-chip"><strong>MathWorks</strong> — Practical Data Science with MATLAB</span>
+      <span class="cred-chip"><strong>Google</strong> — Google AI Essentials</span>
+      <span class="cred-chip"><strong>University of Michigan</strong> — Python for Everybody</span>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>Let's talk materials.</h2>
+        <p class="lede">Open to collaborative research, industrial R&amp;D consultancy, joint proposals, and peer review requests in materials science and additive manufacturing.</p>
+        <a class="email-link" href="mailto:contact@shahadathussain.com">contact@shahadathussain.com</a>
+        <p style="color:#7C838A; font-size:0.86rem; margin-top:22px; font-family:var(--font-mono);">PO Box 129188, Abu Dhabi, UAE</p>
+      </div>
+      <div>
+        <h3>Profiles</h3>
+        <ul>
+          <li><a class="link" href="https://www.linkedin.com/in/shahadathussain/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a class="link" href="https://github.com/drshahadathussain" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="link" href="https://scholar.google.com/citations?user=tQNSWaAAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a class="link" href="https://www.researchgate.net/profile/Shahadat-Hussain" target="_blank" rel="noopener">ResearchGate</a></li>
+          <li><a class="link" href="https://link.springer.com/researchers/47794963SN" target="_blank" rel="noopener">Springer Nature</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Elsewhere</h3>
+        <ul>
+          <li><a class="link" href="https://nyuad.nyu.edu/en/research/researchers/research-staff/shahadat-hussain.html" target="_blank" rel="noopener">NYU Abu Dhabi profile</a></li>
+          <li><a class="link" href="https://drshahadathussain.substack.com" target="_blank" rel="noopener">Substack</a></li>
+          <li><a class="link" href="https://bsky.app/profile/shahadathussain.bsky.social" target="_blank" rel="noopener">Bluesky</a></li>
+          <li><a class="link" href="https://www.kaggle.com/drshahadathussain" target="_blank" rel="noopener">Kaggle</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Shahadat Hussain, PhD. All rights reserved.</span>
+      <span>ORCID 0000-0002-4355-2169 · Scopus 56380929800 · ISNI 0000-0005-3020-7229</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav solid-on-scroll
+  const nav = document.getElementById('siteNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('solid', window.scrollY > 60);
+  });
+
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navList = document.getElementById('navList');
+  navToggle.addEventListener('click', () => {
+    const open = navList.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navList.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navList.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Procedural gyroid-weave hero background
+  (function buildWeave(){
+    const svg = document.querySelector('.hero .weave');
+    const group = document.getElementById('weaveGroup');
+    const ns = "http://www.w3.org/2000/svg";
+    const w = window.innerWidth, h = window.innerHeight;
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    const lines = window.innerWidth < 700 ? 9 : 16;
+    for (let i = 0; i < lines; i++){
+      const phase = i * 0.5;
+      const amp = 34 + (i % 3) * 14;
+      const freq = 0.006 + (i % 4) * 0.0016;
+      let d = "";
+      for (let x = 0; x <= w; x += 10){
+        const y = (h/lines) * i
+          + Math.sin(x*freq + phase) * amp
+          + Math.sin(x*freq*2.3 + phase*1.6) * amp * 0.35;
+        d += (x === 0 ? `M${x},${y.toFixed(1)}` : ` L${x},${y.toFixed(1)}`);
+      }
+      const path = document.createElementNS(ns, 'path');
+      path.setAttribute('d', d);
+      path.setAttribute('class', 'weave-line');
+      path.setAttribute('stroke', 'url(#oxideGrad)');
+      path.style.opacity = (0.08 + (i % 5) * 0.025).toFixed(3);
+      group.appendChild(path);
+    }
+  })();
+</script>
+</body>
+</html>
