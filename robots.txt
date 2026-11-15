@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://shahadat-hussain.github.io/sitemap.xml
