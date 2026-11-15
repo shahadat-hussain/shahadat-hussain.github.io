@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>Materials Scientist & Mechanical Engineer</a>. Abu Dhabi. UAE
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Division of Enginering</p>
+    <p>NYU Abu Dhabi</p>
+    <p>Saadiyat Island, Abu Dhabi</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,7 +27,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a materials and mechanical engineer specializing in **metal additive manufacturing (LPBF)**, **architected cellular metamaterials (TPMS lattices)**, and **shape memory alloys**. My work bridges process–structure–property relationships with computational design and experimental mechanics to develop high-performance functional structures for aerospace, energy, and biomedical applications.
+
+### Core Research & Engineering Focus
+* **Additive Manufacturing & Process Metallurgy:** Laser powder bed fusion (LPBF) parameter optimization, defect mitigation, and post-processing heat treatments.
+* **Architected Metamaterials:** Design, finite element modeling (FEA), and mechanical characterization of Triply Periodic Minimal Surface (TPMS) lattice structures.
+* **Advanced Materials Characterization:** Microstructural analysis (SEM, EBSD, XRD), X-ray computed tomography (micro-CT), and quasi-static/dynamic mechanical testing.
+
+I am open to research collaborations, R&D consulting, and industry partnerships in advanced manufacturing and structural materials. Feel free to reach out via email or connect through my academic profiles below.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
