@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The manuscript published in the "Progress in Additive Manufacturing" journal! :sparkles: :smile:
+The paper is now published in the journal Progress in Additive Manufacturing! :sparkles: :smile:
