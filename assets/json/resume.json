@@ -131,11 +131,11 @@
       "summary": "By combining chopped carbon fiber reinforcement with thermal post-processing, we created ultra-lightweight 3D-printed TPMS lattices that match the energy absorption of metals while boosting toughness by 60%."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Microstructural and surface analysis of NiTi TPMS lattice sections fabricated by laser powder bed fusion",
+      "publisher": "Journal of Manufacturing Processes",
+      "releaseDate": "2023-09-29",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1526612523007405",
+      "summary": "Unlocking complex geometries in hard-to-machine NiTi alloys: Our research maps how Laser Powder Bed Fusion parameters directly control microstructure, Ni evaporation, and phase distribution in advanced TPMS lattices."
     },
     {
       "name": "Die Grundlage der allgemeinen Relativitätstheorie",
@@ -147,7 +147,7 @@
   ],
   "skills": [
     {
-      "name": "",
+      "name": "Materials & Mechanical Engineering",
       "level": "",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
