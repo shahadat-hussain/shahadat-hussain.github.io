@@ -14,7 +14,7 @@ github_username: drshahadathussain
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
   logo: # can be png, svg, jpg
-  title: 
-  url: 
+  title: #
+  url: #
 
 
