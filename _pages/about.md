@@ -9,10 +9,12 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Division of Enginering</p>
-    <p>New York University Abu Dhabi</p>
-    <p>Saadiyat Island, Abu Dhabi, UAE</p>
-
+    <div style="text-align: center;">
+      Division of Engineering<br>
+      New York University Abu Dhabi<br>
+      Saadiyat Island, Abu Dhabi, UAE
+    </div>
+    
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
