@@ -175,7 +175,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # Optional: Set default categories and tags for posts from each source.
 external_sources:
   - name: substack.com
-    rss_url: https://drshahadathussain.substack.com
+    rss_url: https://drshahadathussain.substack.com/feed
     categories: [external-posts]
     tags: [blog]
   - name: Google Blog
