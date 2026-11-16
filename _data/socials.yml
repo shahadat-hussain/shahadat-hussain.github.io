@@ -10,7 +10,7 @@ scopus_id: 563​80929800
 research_gate_profile: Shahadat-Hussain # your ResearchGate profile slug
 linkedin_username: shahadathussain
 github_username: drshahadathussain
-x_username: ShahadatPhD    # Do not include the @ symbol
+x_username: ShahadatPhD # Do not include the @ symbol
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
