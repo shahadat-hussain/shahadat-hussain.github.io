@@ -19,45 +19,45 @@
     {
       "name": "New York University Abu Dhabi",
       "position": "Associate Research Scientist",
-      "location": "NYU Abu Dhabi, Saadiyat Island",
+      "location": "Abu Dhabi, UAE",
       "startDate": "2024-09-16",
       "endDate": "Present",
       "summary": "I am a materials scientist and mechanical engineering researcher designing architected metamaterials, 3D-printed smart alloys, and composite structures to solve complex industrial challenges.",
-      "highlights": ["TPMS Metamaterials", "Description 2."]
+      "highlights": ["TPMS Metamaterials", "Additive Manufacturing"]
     },
     {
-      "name": "California Institute of Technology",
-      "position": "Visiting Professor",
-      "location": "Pasadena, California, US",
-      "startDate": "1933-01-01",
-      "endDate": "1933-01-01",
+      "name": "Khalifa University",
+      "position": "Postdoctoral Fellow",
+      "location": "Abu Dhabi, UAE",
+      "startDate": "2020-02-24",
+      "endDate": "2024-06-30",
       "summary": "",
-      "highlights": ["Description 1.", "Description 2."]
+      "highlights": ["Architected NiTi lattice", "Metal Additive Manufacturing (LPBF)"]
     },
     {
-      "name": "Kaiser Wilhelm Institute for Physics",
-      "position": "Director",
-      "location": "Berlin, Germany",
-      "startDate": "1917-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "name": "Karl-Ferdinand University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Prague, Czechoslovakia",
-      "startDate": "1911-01-01",
-      "endDate": "1917-01-01",
+      "name": "CSIR-Advanced Materials and Processes Research Institute",
+      "position": "Project Fellow",
+      "location": "Bhopal, India",
+      "startDate": "2013-05-31",
+      "endDate": "2014-08-10",
       "summary": "",
       "highlights": []
     },
     {
-      "name": "University of Zurich",
-      "position": "Associate Professor of Theoretical Physics",
-      "location": "Zurich, Switzerland",
-      "startDate": "1909-01-01",
-      "endDate": "1911-01-01",
+      "name": "Oriental College of Technology",
+      "position": "Lecturer",
+      "location": "Bhopal, India",
+      "startDate": "2012-09-03",
+      "endDate": "2013-05-30",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "SAIL-Bokaro Steel Limited",
+      "position": "Engineering Intern",
+      "location": "Bokaro, India",
+      "startDate": "2011-06-01",
+      "endDate": "2011-07-01",
       "summary": "",
       "highlights": []
     }
