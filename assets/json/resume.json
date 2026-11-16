@@ -211,11 +211,11 @@
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01"
+      "name": "NiTi TPMS Metamaterials",
+      "summary": "Metal 3D Printing via Laser Powder Bed Fusion technique of NiTi Gyroid and Primitive Lattices and their characterizations.",
+      "highlights": ["LPBF", "Microstructure Characterization"],
+      "startDate": "2020-02-24",
+      "endDate": "2024-06-30"
     }
   ]
 }
