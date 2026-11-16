@@ -7,8 +7,8 @@ repo_description_lines_max: 2
 github_repos:
   - drshahadathussain/tpms-metamaterial-lattices
   - drshahadathussain/contrast-adjusting-techniques 
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - drshahadathussain/antarctica-water-segmentation-function
+  - drshahadathussain/supervised-machine-learning-regression-and-classification 
+  - drshahadathussain/exploratory-data-analysis-with-matlab
+  - drshahadathussain/data-analysis-with-python
+  - drshahadathussain/machine-learning-with-python 
