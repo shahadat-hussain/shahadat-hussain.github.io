@@ -104,21 +104,21 @@
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
+      "name": "Supervised Machine Learning: Regression and Classification",
+      "date": "2026-01-16",
       "issuer": "Stanford University",
       "icon": "fa-solid fa-location-dot"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
+      "name": "IBM Data Science Professional Certificate",
+      "date": "2025-08-23",
+      "issuer": "IBM",
       "icon": "fa-solid fa-tag"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
+      "name": "Python for Everybody",
+      "date": "2024-02-15",
+      "issuer": "University of Michigan",
       "icon": "fa-solid fa-envelope"
     }
   ],
@@ -147,16 +147,16 @@
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
+      "name": "",
+      "level": "",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Advanced Materials",
+        "3D Printing",
+        "Mechanical Testing",
+        "Materials Characterizations",
+        "Data Science & Machine Learning",
+        "Research & Development"
       ]
     }
   ],
