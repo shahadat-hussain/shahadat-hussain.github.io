@@ -177,13 +177,13 @@ external_sources:
   - name: substack.com
     rss_url: https://drshahadathussain.substack.com/feed
     categories: [external-posts]
-    tags: [blog]
-  - name: Google Blog
+    tags: [substack]
+  - name: Blogger
     posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+      - url: https://dr-shahadathussain.blogspot.com/feeds/posts/default?alt=rss
+        published_date: 2026-01-14
     categories: [external-posts]
-    tags: [google]
+    tags: [blogspot]
 
 # -----------------------------------------------------------------------------
 # Newsletter
