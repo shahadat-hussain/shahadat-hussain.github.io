@@ -1,33 +1,16 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: A manuscript submitted for review
+date: 2026-02-05 16:11:00-0400
 inline: false
 related_posts: false
 ---
+Manuscript communicated to the journal (Progress in Additive Manufacturing, Springer)
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
-
----
-
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
-
-#### Hipster list
-
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
-
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
+## Do chopped fibers matter? Process–structure–property relationships and thermal annealing effects in fiber-reinforced TPMS lattices
 
 ---
+**Abstract**
 
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
+Triply periodic minimal surface (TPMS) lattices offer high structural efficiency for lightweight energy absorption, yet the effects of chopped fiber reinforcement and post-processing on their mechanical response remain poorly quantified. This study systematically investigates the mechanical behavior of additively manufactured gyroid TPMS lattices fabricated from five polymeric filaments—VeroWhite, Nylon 12, ABS, carbon fiber-reinforced PLA (PLA-CF) and polyphthalamide (PPA-CF)—across relative densities of 20–40%. Experimental results show that annealed fiber-reinforced lattices, particularly PPA-CF, consistently outperform unreinforced polymers in terms of peak stress, toughness, and energy absorption, with performance gains becoming more pronounced at higher relative densities. Post-print thermal annealing of PPA-CF increases its peak stress by ~40% and toughness by up to 60%, while altering its post-yield deformation stability. Annealed PPA-CF gyroids achieve specific energy absorption values of up to 24–25 kJ/kg at densities of 200–430 kg/m3, comparable to reported metallic TPMS structures, at substantially lower weight. Finite element analysis reveals elevated stress localization and increased plastic strains in fiber-reinforced lattices, consistent with the experimentally recorded post-elastic ductility trade-offs. These findings demonstrate that chopped fiber CF reinforcement, in combination with thermal post-processing, fundamentally modifies deformation behavior and enables high-performance, lightweight TPMS architectures through coordinated control of relative density and processing.
 
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
