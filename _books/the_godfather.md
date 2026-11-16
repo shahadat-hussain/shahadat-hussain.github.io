@@ -17,12 +17,36 @@ goodreads_review: 6318556633
 status: Finished
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin eros sit amet ante aliquet, sit amet vulputate lectus mattis. Aenean ullamcorper pretium nunc, sed egestas lorem elementum id. Nulla id mi id neque ultrices egestas ut in urna. Sed ac ultricies nunc. Nam convallis placerat urna id egestas. Nulla porta, est interdum vestibulum venenatis, lorem odio laoreet sapien, in pulvinar tellus eros a dolor. Vivamus sapien justo, ullamcorper a mi eget, scelerisque euismod nunc. In augue augue, ultrices a ornare non, tincidunt quis justo. Donec sit amet consectetur eros. Nullam neque leo, tincidunt id ipsum ac, volutpat lobortis mi. Phasellus consequat ultricies arcu, eu semper ligula ultrices eget. Ut in fringilla elit, ac tincidunt nisi.
+### Overview & Purpose
 
-Nunc commodo elit nec turpis feugiat consectetur. Nullam in nisi egestas, fermentum ligula hendrerit, euismod enim. Nulla eu hendrerit eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et velit ante. Vestibulum pretium vitae quam et sagittis. Proin eu nunc vel velit accumsan eleifend. Nulla facilisis, diam tempus imperdiet ultrices, massa ipsum consequat orci, sed efficitur eros mi a felis. Cras lobortis turpis sem, sed lobortis nunc ullamcorper tristique. Nam vehicula rhoncus ante, in faucibus sapien scelerisque et. Donec semper libero et tincidunt mattis. In vestibulum, nulla pretium dictum commodo, risus nulla vestibulum felis, at tincidunt massa mi in odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+*Numerical Methods for Engineers* is a foundational undergraduate textbook authored by Steven C. Chapra (Tufts University) and Raymond P. Canale (University of Michigan), published by McGraw-Hill Education. Designed for engineering, science, and mathematics students, the text transitions learners away from tedious manual calculations toward practical, computer-based algorithms. It emphasizes real-world applications spanning civil, mechanical, electrical, and chemical engineering disciplines.
 
-Donec efficitur ultrices purus sit amet imperdiet. Nam consequat metus in erat sodales faucibus. Aliquam maximus fermentum nulla id finibus. Aliquam iaculis sed odio vel rutrum. Curabitur sed odio est. Praesent nec sollicitudin tortor. Praesent pharetra, turpis quis porttitor rhoncus, ante massa fringilla lacus, nec porttitor magna turpis vitae felis. Nullam tristique massa id odio imperdiet, nec sodales massa egestas. Proin nisi metus, euismod sed accumsan vitae, facilisis vel risus. Morbi suscipit auctor erat, nec viverra elit fringilla eu. Mauris congue, purus id tristique facilisis, felis nisi efficitur magna, eu consectetur augue sem vitae lacus. Aliquam erat volutpat. Cras at nibh ultricies, volutpat arcu vitae, dictum est. In ac dolor sagittis, egestas lectus et, semper nisl. Etiam consectetur purus vitae sapien porttitor auctor.
+---
 
-Nulla sit amet venenatis odio. Suspendisse ac lacus quis augue mollis tempus vel in lorem. Donec augue turpis, eleifend nec nibh eu, elementum dictum metus. Proin ut est ligula. Etiam vehicula facilisis metus, sit amet consectetur risus ullamcorper porttitor. In congue nibh quis sollicitudin iaculis. Donec a mollis lorem, non mollis lacus. Nulla et leo ex. Aliquam erat volutpat. Nam sit amet tincidunt mauris. Vivamus vitae est sit amet nisi semper egestas. Donec in diam pharetra, commodo diam vitae, imperdiet ligula. Cras iaculis ac diam eget vehicula. Proin suscipit ante enim, quis vehicula mi porta bibendum. Aliquam a diam porttitor, sollicitudin justo vitae, tempor odio.
+### Core Curriculum & Topics
 
-Cras fermentum dignissim pretium. Donec quis turpis eu neque lacinia facilisis in sit amet nibh. Nulla non tortor ultricies, euismod est in, blandit nibh. Ut a neque metus. Sed convallis condimentum nibh quis finibus. Praesent aliquam sem iaculis eros maximus accumsan. Nulla venenatis mauris id aliquet maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at enim vitae ex porttitor vestibulum sed eget nibh. Suspendisse accumsan feugiat quam eget ultricies.
+The textbook is systematically structured into key technical modules:
+
+* **Fundamentals & Error Analysis:** Mathematical modeling, digital representation, roundoff/truncation errors, and Taylor series expansions.
+* **Equation Roots:** Bracketing methods, open-ended methods, and polynomial root-finding.
+* **Linear Algebra:** Systems of linear algebraic equations solved via Gauss elimination, LU decomposition, and Gauss-Seidel techniques.
+* **Optimization:** One-dimensional, multi-dimensional, and constrained optimization problems.
+* **Curve Fitting:** Least-squares regression, interpolation, and Fourier approximations.
+* **Calculus Operations:** Numerical differentiation and integration, including Newton-Cotes formulas and adaptive quadrature.
+* **Differential Equations (ODEs & PDEs):** Solutions for ordinary differential equations (Runge-Kutta methods, stiffness, boundary-value problems) and partial differential equations (finite-difference and finite-element methods).
+
+---
+
+### Software & Computational Integration
+
+To bridge theoretical concepts with modern engineering workflows, the book incorporates cross-platform computational tools and programming languages:
+
+* **MATLAB / Simulink**
+* **Microsoft Excel** and **Mathcad**
+* **Custom Code Implementation** examples in C/C++, Fortran, and Visual Basic
+
+---
+
+### Key Edition Highlight
+
+* **8th Edition (McGraw-Hill, 2021):** Features expanded digital companion materials, refined cubic spline formulations, enhanced Monte Carlo integration methods, and updated coverage of hyperbolic partial differential equations.
