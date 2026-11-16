@@ -3,7 +3,7 @@ layout: book-review
 title: Numerical Methods For Engineers
 author: Steven Chapra, Raymond Canale 
 cover: assets/img/book_covers/numerical.jpg
-olid: OL43499941M # use Open Library ID to fetch cover (if no `cover` is provided)
+olid: OL26837930M # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: 1260571386 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: engineering textbook
 tags: top-100
