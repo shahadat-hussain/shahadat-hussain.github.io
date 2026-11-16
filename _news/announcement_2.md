@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A manuscript submitted for review
+title: Manuscript submitted to Progress in Additive Manufacturing (Springer)
 date: 2026-02-05 16:11:00-0400
 inline: false
 related_posts: false
