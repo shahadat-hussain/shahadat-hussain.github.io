@@ -10,6 +10,7 @@ Paper under consideration at Progress in Additive Manufacturing (Springer)
 ## Do chopped fibers matter? Process–structure–property relationships and thermal annealing effects in fiber-reinforced TPMS lattices
 
 ---
+
 ### Abstract
 
 
