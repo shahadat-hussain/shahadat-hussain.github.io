@@ -148,10 +148,10 @@
   "skills": [
     {
       "name": "Materials & Mechanical Engineering",
-      "level": "",
+      "level": "Advance",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Advanced Materials",
+        "Architected Materials",
         "3D Printing",
         "Mechanical Testing",
         "Materials Characterizations",
