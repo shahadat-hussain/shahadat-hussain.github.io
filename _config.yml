@@ -174,14 +174,12 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
 external_sources:
-  - name: substack.com
+  - name: substack
     rss_url: https://drshahadathussain.substack.com/feed
     categories: [external-posts]
     tags: [substack]
   - name: Blogger
-    posts:
-      - url: https://dr-shahadathussain.blogspot.com/feeds/posts/default?alt=rss
-        published_date: 2026-01-14
+    rss_url: https://dr-shahadathussain.blogspot.com/feeds/posts/default?alt=rss
     categories: [external-posts]
     tags: [blogspot]
 
