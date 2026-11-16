@@ -62,17 +62,6 @@
       "highlights": []
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Center for Open Science",
-      "location": "",
-      "position": "Technology Advocate",
-      "startDate": "2026-06-01",
-      "endDate": "Present",
-      "summary": "Championed reproducible research workflows and open data practices within the computational materials science community, promoting the integration of the Open Science Framework (OSF) with version-controlled code and open datasets.",
-      "highlights": ["Toolchain Integration", "Community Adoption"]
-    }
-  ],
   "education": [
     {
       "institution": "Academy of Scientific and Innovative Research",
@@ -185,7 +174,7 @@
   ],
   "interests": [
     {
-      "name": "Materials Science",
+      "name": "Advanced Materials & Manufacturing",
       "icon": "fa-solid fa-tag",
       "keywords": [
         "TPMS Metamaterials",
@@ -193,7 +182,7 @@
         "Mechanical Testing",
         "Materials Characterizations",
         "Shape Memory Alloys",
-        "Materials Infomratics"
+        "Materials Informatics"
       ]
     }
   ],
