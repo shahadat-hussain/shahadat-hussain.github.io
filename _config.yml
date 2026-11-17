@@ -11,7 +11,7 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Secondary academic repository, BibTeX publication archive, and technical research blog of Dr. Shahadat Hussain. For the official main website, visit shahadathussain.com.
 footer_text: >
-   Secondary academic archive &amp; research notes. Official website: <a href="https://www.shahadathussain.com" target="_blank" rel="noopener">shahadathussain.com</a>
+   Secondary academic archive &amp; research notes. Official website: <a href="https://www.shahadathussain.com" target="_blank">shahadathussain.com</a>
 
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
