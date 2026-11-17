@@ -181,6 +181,14 @@ external_sources:
     rss_url: https://dr-shahadathussain.blogspot.com/feeds/posts/default?alt=rss
     categories: [external-posts]
     tags: [blogspot]
+  - name: medium.com
+    rss_url: https://drshahadathussain.medium.com/feed
+    categories: [external-posts]
+    tags: [medium]
+  - name: paragraph.com
+    rss_url: https://api.paragraph.com/blogs/rss/@shahadathussain
+    categories: [external-posts]
+    tags: [paragraph]
 
 # -----------------------------------------------------------------------------
 # Newsletter
