@@ -190,7 +190,7 @@ external_sources:
     categories: [external-posts]
     tags: [paragraph]
   - name: bluesky
-    rss_url: https://bsky.app/profile/shahadathussain.com/rss
+    rss_url: https://rss.app/feeds/buXGgYMgATipBF4z.xml
     categories: [external-posts]
     tags: [bluesky]
 
