@@ -12,8 +12,12 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
  description: >-
   Secondary academic repository, BibTeX publication archive, and technical research blog of Dr. Shahadat Hussain. For the official main website, visit shahadathussain.com.
 footer_text: >
-  |  R&D · Metamaterials · Additive Manufacturing · NiTi · Materials Characterization · Mechanical Testing
+ <div>
+  &copy; Copyright {{ site.time | date: '%Y' }} Shahadat Hussain. | R&D &middot; Metamaterials &middot; Additive Manufacturing &middot; NiTi &middot; Materials Characterization &middot; Mechanical Testing
+</div>
+<div class="small text-muted mt-1">
   Secondary academic archive &amp; research notes. Official website: <a href="https://shahadathussain.com" target="_blank" rel="noopener">shahadathussain.com</a>
+</div>
 
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
