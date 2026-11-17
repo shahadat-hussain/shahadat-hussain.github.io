@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://academic.shahadathussain.com/sitemap.xml
+Sitemap: https://dr.shahadathussain.com/sitemap.xml
