@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Materials Scientist & Mechanical Engineer</a>. Abu Dhabi. UAE
+subtitle: <a href='#'>Materials Scientist & Mechanical Engineer</a>. Abu Dhabi, United Arab Emirates
 
 profile:
   align: right
