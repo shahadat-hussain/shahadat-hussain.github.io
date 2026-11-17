@@ -189,6 +189,10 @@ external_sources:
     rss_url: https://api.paragraph.com/blogs/rss/@shahadathussain
     categories: [external-posts]
     tags: [paragraph]
+  - name: bluesky
+    rss_url: https://bsky.app/profile/shahadathussain.com/rss
+    categories: [external-posts]
+    tags: [bluesky]
 
 # -----------------------------------------------------------------------------
 # Newsletter
