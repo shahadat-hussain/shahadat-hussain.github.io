@@ -189,6 +189,10 @@ external_sources:
     rss_url: https://api.paragraph.com/blogs/rss/@shahadathussain
     categories: [external-posts]
     tags: [paragraph]
+  - name: substack.com
+    rss_url: https://rss.app/embed/v1/list/l1SHhbyQedrVGS70
+    categories: [external-posts]
+    tags: [substack]
 
 
 # -----------------------------------------------------------------------------
