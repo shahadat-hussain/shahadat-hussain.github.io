@@ -28,7 +28,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a materials and mechanical engineer specializing in metal additive manufacturing via **laser powder bed fusion (LPBF)**, **architected cellular metamaterials** including **TPMS lattices**, and **shape memory alloys**. My research bridges **process–structure–property relationships** with computational design and experimental mechanics to engineer high-performance functional structures tailored for aerospace, energy, and biomedical applications.
+I am a materials researcher and a mechanical engineer specializing in metal additive manufacturing via **laser powder bed fusion (LPBF)**, **architected cellular metamaterials** including **TPMS lattices**, and **shape memory alloys**. My research bridges **process–structure–property relationships** with computational design and experimental mechanics to engineer high-performance functional structures tailored for aerospace, energy, and biomedical applications.
 
 My core research centers on **additive manufacturing** and **process metallurgy**, focusing on LPBF parameter optimization, defect mitigation, and advanced post-processing heat treatments. Complementing this, I design and model **architected metamaterials** through CAD and **mechanical characterization** of **Triply Periodic Minimal Surface (TPMS)** structures. To validate these frameworks, I employ advanced **materials characterization** techniques, encompassing **microstructural analysis** via SEM, EBSD, and XRD, non-destructive evaluation using X-ray computed tomography (micro-CT), and comprehensive quasi-static and dynamic **mechanical testing**.
 
