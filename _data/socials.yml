@@ -6,13 +6,13 @@ email: contact@shahadathussain.com # your email address
 orcid_id: 0000-0002-4355-2169 # your 16-digit ORCID
 # rss_icon: true # comment this line to hide the RSS icon
 scholar_userid: tQNSWaAAAAAJ # your Google Scholar ID
-semanticscholar_id: Shahadat-Hussain/2048939917
-gitlab_username: drshahadathussain # pubmed id
+# semanticscholar_id: Shahadat-Hussain/2048939917
+# gitlab_username: drshahadathussain # pubmed id
 research_gate_profile: Shahadat-Hussain # your ResearchGate profile slug
 linkedin_username: shahadathussain
 github_username: drshahadathussain
 bluesky_url: https://bsky.app/profile/shahadathussain.com
-x_username: ShahadatPhD # Do not include the @ symbol
+# x_username: ShahadatPhD # Do not include the @ symbol
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 
